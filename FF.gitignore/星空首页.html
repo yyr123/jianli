@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>首页</title>
+    <link rel="stylesheet" href="reset1.css">
+    <link rel="stylesheet" href="./全屏效果/css/jquery.fullPage.css">
+    <style>
+
+
+        body{
+            margin: 0;
+            padding: 0;
+            line-height: 0;
+
+        }
+        .header{
+            width: 100%;
+            height: 100%;
+            background-image: url(img/星空2.png);
+            background-color:#01081d;
+        }
+        .img1{
+            width: 300%;
+            height: 150%;
+            position: absolute;
+            bottom: -74%;
+            left: -110%;
+
+            text-align: center;
+
+        }
+        .top{
+
+            /*注意这里一定要用固定宽*/
+            width: 40px;
+            height: 40px;
+            position: fixed;
+            top:4%;
+            right:2%;
+            background:
+                        url(img/tuoyuan.png) no-repeat  0% 0%,
+                        url(img/yinfu.png) center center  no-repeat ;
+
+            z-index: 3;
+            background-size:100%,42%;
+
+        }
+        .pull-up{
+               margin: auto;
+               background:url(img/xiala.png) no-repeat;
+               width: 40px;
+               height: 30px;
+               position: fixed;
+               bottom: 12px;
+               left: 46%;
+               z-index: 2;
+               background-size: 100%;
+           }
+        .title{
+            font-size: 34px;
+            color:#fafafa;
+            text-align: center;
+            margin-top:-194px;    /*注意这里一定要用固定宽*/
+
+        }
+        hr{
+            width: 50%;
+            color:rgba(255, 255, 255, 0.5)
+
+        }
+        .title1{
+            font-family:'方正兰亭超细黑简体' ;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 16px;   /*注意这里一定要用固定宽*/
+        }
+
+       .information{
+           min-width: 300px;
+           max-width: 768px;
+           width: 80%;
+           height: 58%;
+           background: url(img/多边形-1.png) no-repeat,
+                       url(img/形状-1.png) 10px 50px no-repeat,
+                       url(img/矩形-1-拷贝.png) 56px 164px no-repeat,
+                       url(img/Nipic_25xx.png) 10px 20px no-repeat;
+
+
+           background-size: 100%,100%,50%,100%;
+           color:#ffffff;
+           text-align: center;
+           margin: 0 auto;
+       }
+       .Position{
+           font-size: 26px;
+           line-height: 60px;
+       }
+        .information h2{
+            line-height: 20px;
+            font-family: '新宋体';
+
+
+        }
+
+        .title2{
+            width: 100%;
+            color: #fafafa;
+            position: absolute;
+            top: 10%;
+            left: 2%;
+            text-align: center;
+        }
+
+        .title2 img{
+            width: 60%;
+
+        }
+        .title2 p{
+            font-size: 20px;
+            line-height: 28px;
+            font-weight: bold;
+            color:#ffffff;
+            opacity: 0.3;
+        }
+        .skills{
+              width: 80%;
+              height:55%;
+              margin-left: 10%;
+              margin-top: 28%;
+              /*border:1px solid red;*/
+          }
+
+        .skill{
+            width: 70px;
+            line-height:70px;
+            border-radius: 50%;
+            background: url(img/椭圆-1.png) no-repeat center center;
+            background-size:80%;
+            border:1px dashed #ffffff;
+            position: absolute;
+            top:-7px;
+            left:-8px;
+            color:#006fff;
+        }
+
+        .skills-li{
+            text-align: center;
+            font-size: 20px;
+            width: 106%;
+            line-height: 58px;
+            display: inline-block;
+            border-radius: 28px;
+            background: rgba(167, 170, 178, 0.44);
+            position: relative;
+            margin-bottom: 22px;
+            color:#ffffff;
+        }
+
+        .wexp{
+            width: 80%;
+            margin-left: 10%;
+            margin-top: 100px;
+
+
+        }
+        .wexp li{
+
+            background: url(img/工作经历1.png) no-repeat;
+            background-size:14%;
+            margin-bottom: 30px;
+
+        }
+        .wexp span{
+            font-size: 16px;
+            color:#ffffff;
+            line-height: 30px;
+            margin-left: 16%;
+
+        }
+        .division{
+            width: 52%;
+            border:1px solid rgba(255, 255, 255, 0.5);
+            display: block;
+
+
+        }
+    </style>
+</head>
+<body>
+<div class="top"></div>
+<div class="pull-up"></div>
+<div id="fullpage">
+    <!--1-->
+  <div class="fp-section header">
+      <div class="title">
+      <h1 style="margin-bottom: 28px;">个人简历</h1><hr>
+      <p class="title1">personal resume</p>
+      </div>
+      <img class="img1" src="img/图层-44.png" alt="">
+
+  </div>
+<!--2-->
+  <div class="fp-section header">
+      <div class="information">
+         <h1 class="Position">web前端工程师</h1>
+          <h2>姓名：闫亚荣</h2>
+          <h2>性别：女　　</h2>
+          <h2>学历：本科　</h2>
+          <h2>经验：半年　</h2>
+      </div>
+      <img class="img1" src="img/图层-44.png" alt="">
+  </div>
+    <!--3-->
+  <div class="fp-section header">
+         <div class="title2">
+          <img src="img/ROAD-2.png" alt="">
+             <hr>
+          <p >Personal skills</p>
+        </div>
+      <ul class="skills">
+          <li class="skills-li f-clear">
+              <span class="skill">JS</span>
+            精通
+          </li>
+          <li class="skills-li">
+              <span class="skill">CSS</span>
+
+              精通
+          </li>
+          <li class="skills-li">
+              <span class="skill">HTML</span>
+
+              精通
+          </li>
+          <li class="skills-li">
+              <span class="skill">JS</span>
+
+              精通
+          </li>
+          <li class="skills-li">
+              <span class="skill">JS</span>
+
+
+              精通
+          </li>
+
+      </ul>
+  </div>
+<!--4-->
+  <div class="fp-section header">
+      <div class="title2">
+          <img src="img/工作经历.png" alt="">
+          <hr>
+          <p >Work experience</p>
+
+      </div>
+
+      <div class="wexp">
+          <ul>
+              <li >
+              <span>2015.06-2016.09</span><br/>
+              <span>某某互联网公司名称</span>
+              <span class="division"></span>
+               <!--<span> 内容内容内容内容内容内容内容内容内容</span>-->
+              </li>
+
+              <li><span>2015.06-2016.09</span><br/>
+                  <span>某某互联网公司名称</span>
+                  <span class="division"></span></li>
+
+              <li><span>2015.06-2016.09</span><br/>
+                  <span>某某互联网公司名称</span>
+                  <span class="division"></span></li>
+          </ul>
+
+      </div>
+
+
+
+
+  </div>
+
+    <div class="fp-section header">
+
+
+    </div>
+</div>
+
+
+<!--首先要先或去jquery，然后再获取fullpage-->
+
+<script type="text/javascript" src="全屏效果/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="全屏效果/js/jquery.fullPage.min.js"></script>
+
+
+
+<script type="text/javascript">
+    $('#fullpage').fullpage({
+        anchors:['1','2','3','4','5']
+    })
+
+
+</script>
+</body>
+</html>
